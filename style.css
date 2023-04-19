@@ -1,0 +1,128 @@
+html {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    padding: 5%;
+    padding-top: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    height: auto;
+    min-width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-container {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-container {
+    flex-basis: 25%;
+}
+
+.item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.155);
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: hsl(217, 19%, 35%);
+}
+
+.item-top {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.user-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.user-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: ;
+    border: 3px solid hsl(263, 93%, 65%);
+}
+
+.user-graduate, .testimonial-text{
+    opacity: 60%;
+}
+
+.testimonial-header {
+    margin-bottom: 20px;
+}
+
+#item-1 {
+    background-color: hsl(263, 55%, 52%);
+}
+
+#item-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#item-3, .item-5 {
+    background-color: white;
+}
+
+#item-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media (min-width: 800px) {
+    #main-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+    }
+
+    #left-top-container, #left-bottom-container {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+
+    #right-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item {
+        margin-left: 20px;
+        padding: 25px;
+    }
+
+    #item-1, #item-4 {
+        flex-basis: 66%;
+    }
+
+    #item-2, #item-3 {
+        flex-basis: 33%;
+    }
+
+    #item-5 {
+        flex-basis: 100%;
+    }
+
+}
